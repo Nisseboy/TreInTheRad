@@ -102,13 +102,13 @@ class Piece {
   draw() {
     switch (this.type) {
       case 0: //Cross
-        fill(255,40,50);
+        stroke(255,40,50);
         line(this.x + size / 4, this.y + size / 4, this.x + size * 0.75, this.y + size * 0.75);
         line(this.x + size * 0.75, this.y + size / 4, this.x + size / 4, this.y + size * 0.75);
         break;
       case 1: //Circle
-        fill(40,40,255);
-        ellipse(this.x + size / 2, this.y + size / 2, size * 1.5);
+        stroke(40,40,255);
+        ellipse(this.x + size / 2, this.y + size / 2, size * 0.5);
     }
     for (let x = 0; x < 3; x++) {
       for (let y = 0; y < 3; y++) {
